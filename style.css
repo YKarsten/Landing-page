@@ -1,40 +1,118 @@
-/*body {
-    margin: 0;
-    background: #eee;
-    font-family: Besley, serif;
-    display: flex;
-  }
-  */
-
-  .header {
-    background: #1F2937;
-    /* border-bottom: 1px solid rgb(185, 82, 82);
-    box-shadow: 0 0 8px rgba(0,0,0,.1); */
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    width: auto;
-    color: white;
+.header {
+  background: #1F2937;
+  height: 40vh;
+  color: #F9FAF8;
 }
 
-.left, .right {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-    margin: 0 50px 0 50px;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 5vw 5vw 5vw; 
 
-  ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    gap: 16px;
-  }
-
-.quote  {
-    background-color: #E5E7EB;
 }
+
+ul {
+  list-style-type: none;
+  /* remove dots in front of list item */
+
+  display: flex;
+  /* align items horizontally*/
+
+  align-items: center;
+  /* align items to "Header logo" div*/
   
+  gap: 16px;
+  /* seperate list items*/
+}
+
+a {
+  text-decoration: none;
+    /* remove underscore from links */
+
+  color: #e5e7ebb1;
+}
+
+.wrapper {
+  margin: 0px 5vw 5vw 5vw; 
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  width: 40vw;
+}
+
+.main {
+  font-size: 48px;
+  font-weight: bolder;
+
+}
+
+.secondary {
+  font-size: 18px;
+  color: #e5e7ebb1;
+}
+
+.button {
+  background-color: #3882F6;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 3px 0;
+}
+
+.placeholder {
+  width: 40vw;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.information  {
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+img {
+  max-width:10vw ;
+/*  overflow-wrap: break-word; */
+}
+
+.quote {
+  background-color: #e5e7ebb1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  padding: 5vh 20vw;
+  font-style: italic;
+  flex-direction: column;
+}
+
+#thor {
+  font-weight: bold;
+  align-self: flex-end;
+  font-style: normal;
+}
+
+.footer {
+  background-color: #3882F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  /*flex-grow: 1; */
+}
